@@ -1,0 +1,22 @@
+{
+    "name": "DeepSync",
+    "description": "DeepSync allows Users to share their deepseek chat session with others",
+    "author": {
+    "email": "hello@dhananjaay.dev"
+  },
+    "homepage_url": "https://dhananjaay.dev",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "scripting"],
+    "host_permissions": ["https://chat.deepseek.com/*"],
+    "content_scripts": [
+    {
+      "matches": ["https://chat.deepseek.com/*"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],  
+    "action": {
+      "default_icon": "logo.png"
+    }
+  }

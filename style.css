@@ -1,0 +1,201 @@
+.settings-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1002;
+    font-family: 'Arial', sans-serif;
+}
+
+.settings-overlay-content {
+    background: #3A3A46;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: left;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    position: relative;
+    color: #F8FAFF;
+}
+
+.settings-overlay-content h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #F8FAFF;
+}
+
+.settings-option {
+    margin-bottom: 20px;
+}
+
+.settings-option label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #F8FAFF;
+}
+
+.settings-option input[type="radio"],
+.settings-option input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.password-field {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.password-field input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #555562;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #555562;
+    color: #F8FAFF;
+}
+
+.password-field .show-password-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #555562;
+    color: #F8FAFF;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.password-field .show-password-button:hover {
+    background: #6c757d;
+}
+
+.expiry-fields {
+    margin-top: 10px;
+}
+
+.expiry-fields input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555562;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #555562;
+    color: #F8FAFF;
+    margin-bottom: 10px;
+}
+
+.settings-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.settings-buttons button {
+    margin-left: 10px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.settings-buttons .create-button {
+    background: #007bff;
+    color: #F8FAFF;
+    font-weight: bold; 
+    border: 2px solid #007bff;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.settings-buttons .create-button:hover {
+    background: #0056b3;
+    border-color: #0056b3;
+    transform: scale(1.05); 
+}
+
+.settings-buttons .create-button:active {
+    background: #004080; 
+    border-color: #004080;
+    transform: scale(0.95); 
+}
+
+.settings-buttons .cancel-button {
+    background: #555562;
+    color: #F8FAFF;
+}
+
+.settings-buttons .cancel-button:hover {
+    background: #6c757d;
+}
+
+
+.loader {
+    border: 3px solid #F8FAFF;
+    border-top: 3px solid #555562;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.url-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.url-text {
+    flex: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #F8FAFF;
+}
+
+.copy-url-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #555562;
+    color: #F8FAFF;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.copy-url-button:hover {
+    background: #6c757d;
+}
+
+.close-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #555562;
+    color: #F8FAFF;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.close-button:hover {
+    background: #6c757d;
+}
