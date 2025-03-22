@@ -2,7 +2,7 @@ let contextMenuTriggerButton = null;
 const SERVER_URL = `https://chat.jaay.fun`;
 
 function isChatHistoryLoaded() {
-    const chatHistoryContainer = document.querySelector(".fb0a63fb"); 
+    const chatHistoryContainer = document.querySelector("._03210fb"); 
     return chatHistoryContainer !== null;
 }
 
@@ -231,9 +231,9 @@ function showSettingsOverlay() {
 }
 
 function trackContextMenuTrigger(event) {
-    const button = event.target.closest(".aa7b7ebb");
+    const button = event.target.closest("._83421f9");
     if (button) {
-        const parentContainer = button.closest(".f9edaa3c");
+        const parentContainer = button.closest("._83421f9");
         if (parentContainer) {
             const buttonText = parentContainer.querySelector(".c08e6e93").innerText;
             contextMenuTriggerButton = parentContainer;
@@ -308,7 +308,7 @@ function observeDOM() {
         for (const mutation of mutationsList) {
             if (mutation.type === "childList") {
                 if (isChatHistoryLoaded()) {
-                    document.querySelectorAll(".aa7b7ebb").forEach((button) => {
+                    document.querySelectorAll("._2090548").forEach((button) => {
                         button.addEventListener("click", trackContextMenuTrigger);
                     });
                 }
